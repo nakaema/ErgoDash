@@ -36,8 +36,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Configure mouse keys
 #define MOUSEKEY_DELAY          0
 #define MOUSEKEY_INTERVAL       20
-#define MOUSEKEY_MAX_SPEED      5
-#define MOUSEKEY_TIME_TO_MAX    10
+#define MOUSEKEY_MAX_SPEED      4
+#define MOUSEKEY_TIME_TO_MAX    15
 
 //#define MK_MOMENTARY_ACCEL
 //#define MK_3_SPEED

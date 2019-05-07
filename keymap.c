@@ -62,23 +62,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Raise
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |      |      |      |      |      |      |                    |      |      | WH_L | WH_U | WH_R |      |      |
+   * |      |      |      |      |      |      |      |                    |      |      | WH_L | WH_U | WH_R |      | PWR  |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |  ~   |   !  |   @  |   #  |   $  |   %  |   _  |                    |      |      | CLI_4| MK_U | CLI_5| ACL0 |      |
+   * |      |      |      |M_PLAY|      |VOL_UP|      |                    |      |      | CLI_4| MK_U | CLI_5|      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * | Tab  |   1  |   2  |   3  |   4  |   5  |  Del |                    | Bksp | CLI_1| MK_L | MK_D | MK_R | ACL1 |      |
+   * |      |      |M_BACK|M_STOP| M_NXT|VOL_DN|      |                    | Bksp | CLI_1| MK_L | MK_D | MK_R |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * | Shift|   6  |   7  |   8  |   9  |   0  | Space|                    |      |      | CLI_1| wH_D | CLI_2| ACL2 |      |
+   * |      |      |      |      |      | MUTE |      |                    |      |      | CLI_1| wH_D | CLI_2|      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * | Ctrl |  GUI |  ALt | EISU |||||||| Lower| Space|      ||||||||      |      | Raise||||||||      |      |      |      |
+   * |      |      |      |      |      | RAISE| Space|      ||||||||      | Enter| LOWER| CTRL | SLEEP|      |      |      |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,            KC_NO, KC_NO,   KC_WH_L, KC_WH_U, KC_WH_R, KC_NO, KC_PWR, \
-    KC_NO, KC_NO, KC_NO,   KC_MPLY, KC_NO,   KC_VOLU, KC_NO,          KC_NO, KC_NO,   KC_BTN4, KC_MS_U, KC_BTN5, KC_ACL0, KC_NO, \
-    KC_NO, KC_NO, KC_MPRV, KC_MSTP, KC_MNXT, KC_VOLD, KC_NO,          KC_NO, KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_ACL1, KC_NO, \
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_MUTE, KC_NO,          KC_NO, KC_NO,   KC_BTN1, KC_WH_D, KC_BTN2, KC_ACL2, KC_NO, \
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE, KC_NO,            KC_NO, LOWER,   KC_NO,   KC_SLEP, KC_NO,   KC_ACL2, KC_NO
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,  KC_NO,   KC_WH_L, KC_WH_U, KC_WH_R, KC_NO, KC_PWR, \
+    KC_NO, KC_NO, KC_NO,   KC_MPLY, KC_NO,   KC_VOLU, KC_NO,            KC_NO,  KC_NO,   KC_BTN4, KC_MS_U, KC_BTN5, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_MPRV, KC_MSTP, KC_MNXT, KC_VOLD, KC_NO,            KC_NO,  KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_MUTE, KC_NO,            KC_NO,  KC_NO,   KC_BTN1, KC_WH_D, KC_BTN2, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE,   KC_SPC,           KC_ENT, LOWER,   KC_RCTL, KC_SLEP, KC_NO,   KC_NO, KC_NO
   ),
 
   /* Adjust

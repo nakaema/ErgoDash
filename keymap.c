@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * |      |      |      |      |      | MUTE |      |                    |      |      | CLI_1| wH_D | CLI_2|      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |      | RAISE| Space|      ||||||||      | Enter| LOWER| CTRL | SLEEP|      |      |      |
+   * |      |      |      |      |      | RAISE| Space|      ||||||||      | Enter| LOWER| CTRL |      |      |      |      |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO, KC_NO, KC_NO,   KC_MPLY, KC_NO,   KC_VOLU, KC_NO,            KC_NO,  KC_NO,   KC_BTN4, KC_MS_U, KC_BTN5, KC_NO, KC_NO, \
     KC_NO, KC_NO, KC_MPRV, KC_MSTP, KC_MNXT, KC_VOLD, KC_NO,            KC_NO,  KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, \
     KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_MUTE, KC_NO,            KC_NO,  KC_NO,   KC_BTN1, KC_WH_D, KC_BTN2, KC_NO, KC_NO, \
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE,   KC_SPC,           KC_ENT, LOWER,   KC_RCTL, KC_SLEP, KC_NO,   KC_NO, KC_NO
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE,   KC_SPC,           KC_ENT, LOWER,   KC_RCTL, KC_NO,   KC_NO,   KC_NO, KC_NO
   ),
 
   /* Adjust

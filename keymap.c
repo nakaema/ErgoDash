@@ -36,49 +36,49 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,   KC_Q,    KC_W,    KC_E,   KC_R,    KC_T,  KC_LBRC,          KC_RBRC,  KC_Y,  KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS, \
     KC_TAB,   KC_A,    KC_S,    KC_D,   KC_F,    KC_G,  KC_LEFT,          KC_RIGHT, KC_H,  KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
     KC_HENK,  KC_Z,    KC_X,    KC_C,   KC_V,    KC_B,  KC_UP,            KC_DOWN,  KC_N,  KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PGUP, \
-    KC_MHEN,  KC_LGUI, KC_LALT, KC_DEL, KC_LSFT, RAISE, KC_SPC,           KC_ENT,   LOWER, KC_RCTL, KC_BSPC, KC_HOME, KC_END,  KC_PGDN
+    KC_MHEN,  KC_LGUI, KC_LALT, KC_DEL, KC_LSFT, RAISE, KC_SPC,           KC_ENT,   LOWER, KC_LCTL, KC_BSPC, KC_HOME, KC_END,  KC_PGDN
   ),
 
   /* Lower
    * ,----------------------------------------------------------------------------------------------------------------------.
    * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      |      |      |                    |      | NumLk|   7  |   8  |   9  |   -  |      |
+   * |      |      |      |      |      |      |      |                    |      |      |   `  |  Up  |   -  |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      |      |      |                    |      |   *  |   4  |   5  |   6  |   +  |      |
+   * |      |   1  |   2  |   3  |   4  |   5  |      |                    |      |      | Left | Down | Right|   =  |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      |      |      |                    |      |   /  |   1  |   2  |   3  |  Ent |      |
+   * |      |   6  |   7  |   8  |   9  |   0  |      |                    |      |      |      |   [  |   ]  |      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |      | Raise|      |      ||||||||      |      | Lower|      |      |      |      |      |
+   * |      |      |      |  Esc | Shift|ADJUST|  Tab |      ||||||||      |      | Lower|      |      |      |      |      |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_LOWER] = LAYOUT(
-    KC_NO,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,            KC_F7,  KC_F8,   KC_F9,  KC_F10, KC_F11, KC_F12,  KC_NO, \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,            KC_NO,  KC_NLCK, KC_7,   KC_8,   KC_9,   KC_PMNS, KC_NO, \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,            KC_NO,  KC_PAST, KC_4,   KC_5,   KC_6,   KC_PPLS, KC_NO, \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,            KC_NO,  KC_PSLS, KC_1,   KC_2,   KC_3,   KC_PENT, KC_NO, \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  RAISE,  KC_NO,            KC_NO,  LOWER,   KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO
+    KC_NO,  KC_F1,  KC_F2,  KC_F3, KC_F4,  KC_F5,  KC_F6,              KC_F7,  KC_F8,  KC_F9,   KC_F10,  KC_F11,   KC_F12, KC_NO, \
+    KC_NO,  KC_NO,  KC_NO,  KC_NO, KC_NO,  KC_NO,  KC_NO,              KC_NO,  KC_NO,  KC_GRV,  KC_UP,   KC_MINS,  KC_NO,  KC_NO, \
+    KC_NO,  KC_1,   KC_2,   KC_3,  KC_4,   KC_5,   KC_NO,              KC_NO,  KC_NO,  KC_LEFT, KC_DOWN, KC_RIGHT, KC_EQL, KC_NO, \
+    KC_NO,  KC_6,   KC_7,   KC_8,  KC_9,   KC_0,   KC_NO,              KC_NO,  KC_NO,  KC_NO,   KC_LBRC, KC_RBRC,  KC_NO,  KC_NO, \
+    KC_NO,  KC_NO,  KC_NO,  KC_ESC,KC_LSFT,ADJUST, KC_TAB,             KC_NO,  LOWER,  KC_NO,   KC_NO,   KC_NO,    KC_NO,  KC_NO
   ),
 
   /* Raise
    * ,----------------------------------------------------------------------------------------------------------------------.
-   * |      |      |      |      |      |      |      |                    |      |      | WH_L | WH_U | WH_R |      | PWR  |
+   * |      |      |      |      |      |      |      |                    |      |      | WH_L | WH_U | WH_R |      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |      |      |      |M_PLAY|      |VOL_UP|      |                    |      |      | CLI_4| MK_U | CLI_5|      |      |
+   * |      |      |      |      |      |      |      |                    |      |      | CLI_4| MK_U | CLI_5|      |      |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * |      |      |M_BACK|M_STOP| M_NXT|VOL_DN|      |                    | Bksp | CLI_1| MK_L | MK_D | MK_R |      |      |
+   * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F11 |                    |      | CLI_1| MK_L | MK_D | MK_R |      |      |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      | MUTE |      |                    |      |      | CLI_1| wH_D | CLI_2|      |      |
+   * |      |  F6  |  F7  |  F8  |  F9  |  F10 |  F12 |                    |      |      | CLI_1| wH_D | CLI_2|      |      |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      |      | RAISE| Space|      ||||||||      | Enter| LOWER| CTRL |      |      |      |      |
+   * |      |      |      |      |      | RAISE| Space|      ||||||||      |  Alt |ADJUST| CTRL |      |      |      |      |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,  KC_NO,   KC_WH_L, KC_WH_U, KC_WH_R, KC_NO, KC_PWR, \
-    KC_NO, KC_NO, KC_NO,   KC_MPLY, KC_NO,   KC_VOLU, KC_NO,            KC_NO,  KC_NO,   KC_BTN4, KC_MS_U, KC_BTN5, KC_NO, KC_NO, \
-    KC_NO, KC_NO, KC_MPRV, KC_MSTP, KC_MNXT, KC_VOLD, KC_NO,            KC_NO,  KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, \
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_MUTE, KC_NO,            KC_NO,  KC_NO,   KC_BTN1, KC_WH_D, KC_BTN2, KC_NO, KC_NO, \
-    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE,   KC_SPC,           KC_ENT, LOWER,   KC_RCTL, KC_NO,   KC_NO,   KC_NO, KC_NO
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,            KC_NO,  KC_NO,   KC_WH_L, KC_WH_U, KC_WH_R, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,            KC_NO,  KC_NO,   KC_BTN4, KC_MS_U, KC_BTN5, KC_NO, KC_NO, \
+    KC_NO, KC_F1, KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F11,           KC_NO,  KC_BTN1, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, \
+    KC_NO, KC_F6, KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_F12,           KC_NO,  KC_NO,   KC_BTN1, KC_WH_D, KC_BTN2, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RAISE,  KC_SPC,           KC_LALT,ADJUST,  KC_LCTL, KC_NO,   KC_NO,   KC_NO, KC_NO
   ),
 
   /* Adjust
